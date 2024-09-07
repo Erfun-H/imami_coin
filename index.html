@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imami Coin Game</title>
     <link rel="stylesheet" href="app.css">
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
         body{
             background-color: var(--tg-theme-bg-color);
@@ -14,25 +13,13 @@
     </style>
 </head>
 <body>
-    <div class="floating-circles">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-    </div>
-    <div class="floating-squares">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-    </div>
-    <div class="glow-effect"></div>
     <div class="container">
         <div class="scores">
             <img class="imami_coin_score_img" src="imami_coin.png" alt="سکه امامی">
-            <span id="score"><strong>0</strong></span>
+            <span id="score">0</span>
         </div>
         <div class="coin">
-            <button class="coin_click" id="coin_click_id">
+            <button class="coin_click", id="coin_click_id">
                 <img class="imami_coin_img" src="imami_coin.png" alt="سکه امامی">
             </button>
         </div>
