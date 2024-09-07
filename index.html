@@ -4,78 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imami Coin Game</title>
-    <style>
-        @font-face {
-            font-family: 'SHABNAM';
-            src: url('Shabnam.woff');
-        }
-        body{
-            display: flex;
-            height: 100vh;
-            font-family: 'SHABNAM';
-            justify-content: center;
-            align-items: center;
-        }
-
-        .coin{
-            display: flex;
-            justify-content: center
-        }
-        .imami_coin_img{
-            max-width: 100%;
-            max-height: 100%;
-            transition: 0.2s all;
-        }
-        .coin_click{
-            max-width: 16rem;
-            max-height: 16rem;
-            border-radius: 100%;
-            outline: none;
-            border: none;
-            background: inherit;
-            transition: 0.05s all;
-        }
-        .coin_click:active .imami_coin_img{
-            transform: scale(1.05);
-        }
-        .scores{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 1rem;
-            margin-right: 15rem;
-        }
-        .imami_coin_score_img{
-            max-width: 5rem;
-            max-height: 5rem;
-            margin-right: 2rem;
-        }
-        #score{
-            max-width: 2rem;
-            max-height: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/app.css">
 </head>
 <body>
     <div class="container">
         <div class="scores">
-            <img class="imami_coin_score_img" src="imami_coin.png" alt="سکه امامی">
+            <img class="imami_coin_score_img" src="images/imami_coin.png" alt="سکه امامی">
             <span id="score"><strong>0</strong></span>
         </div>
         <div class="coin">
             <button class="coin_click", id="coin_click_id">
-                <img class="imami_coin_img" src="imami_coin.png" alt="سکه امامی">
+                <img class="imami_coin_img" src="images/imami_coin.png" alt="سکه امامی">
             </button>
         </div>
     </div>
     
-    <script>
-        let score = 0;
-
-        document.getElementById('coin_click_id').addEventListener('click', function() {
-            score++;
-            document.getElementById('score').innerText = score;
-        });
-    </script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
+
