@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بازی کلیکی</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>بازی کلیکی!</h1>
+    <button id="clickBtn">کلیک کن!</button>
+    <p>امتیاز شما: <span id="score">0</span></p>
+
+    <script>
+        let score = 0;
+
+        document.getElementById('clickBtn').addEventListener('click', function() {
+            score++;
+            document.getElementById('score').innerText = score;
+        });
+    </script>
+</body>
+</html>
