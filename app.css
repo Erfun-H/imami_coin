@@ -45,5 +45,7 @@ body{
 }
 #score{
     max-width: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
     max-height: 2rem;
 }
