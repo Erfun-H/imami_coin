@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'SHABNAM';
-    src: url('../fonts/Shabnam.woff');
+    src: url("Shabnam-Bold.woff");
 }
 body{
     display: flex;
