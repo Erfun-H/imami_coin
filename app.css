@@ -8,6 +8,24 @@ body{
     font-family: 'SHABNAM';
     justify-content: center;
     align-items: center;
+    margin: 0;
+    background-color: #282c34;
+}
+.container{
+    perspective: 1000px;
+}
+.image {
+    width: 16rem;
+    height: 16rem;
+    transition: transform 0.3s ease; /* Smooth transition */
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    backface-visibility: hidden;
 }
 .coin{
     display: flex;
@@ -27,9 +45,6 @@ body{
     background: inherit;
     transition: 0.05s all;
 }
-.coin_click:active .imami_coin_img{
-    transform: scale(1.05);
-}
 .scores{
     display: flex;
     justify-content: center;
@@ -46,4 +61,5 @@ body{
     font-weight: bold;
     font-size: 2rem;
     max-height: 2rem;
+    color: #fff;
 }
