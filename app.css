@@ -20,6 +20,7 @@ body{
     transition: transform 0.3s ease; /* Smooth transition */
     transform-style: preserve-3d;
     cursor: pointer;
+    margin: auto;
 }
 .image img {
     width: 100%;
