@@ -10,6 +10,7 @@ body{
     align-items: center;
     margin: 0;
     background-color: #282c34;
+    user-select: none !important;
 }
 .container{
     perspective: 1000px;
